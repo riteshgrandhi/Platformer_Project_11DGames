@@ -16,6 +16,8 @@ public class Cube_behaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log (intransition);
+
 		Control ();
 		StartCoroutine ("Lerper");
 	}
@@ -35,6 +37,7 @@ public class Cube_behaviour : MonoBehaviour {
 				if(Input.GetKeyDown(KeyCode.Joystick1Button5) && !intransition)
 				{
 					Vector3 crossvel=Vector3.Cross(tside,vel);
+					crossvel = new Vector3 (crossvel.x * AllowX, crossvel.y * AllowY, crossvel.z * AllowZ);
 
 					if(Vector3.Magnitude(crossvel)!=0){
 						turnCube(crossvel);
@@ -68,12 +71,13 @@ public class Cube_behaviour : MonoBehaviour {
 	{
 		Rigidbody hrigid=hero.GetComponent<Rigidbody>();
 		GetComponent<FixedJoint>().connectedBody=hrigid;
-		
+
 		target = current + (90 * v);
-		
-		Vector3 getgrav=hero.GetComponent<Hero_controller>().getgravity();
-		Vector3 targrav = -Vector3.Cross(getgrav,v).normalized;
-		hero.GetComponent<Hero_controller>().setgravity(9.81f*targrav);
+		if (v.sqrMagnitude == 1) {
+			Vector3 getgrav = hero.GetComponent<Hero_controller> ().getgravity ();
+			Vector3 targrav = -Vector3.Cross (getgrav, v).normalized;
+			hero.GetComponent<Hero_controller> ().setgravity (9.81f * targrav);
+		}
 	}
 	void Lerper()
 	{ 
