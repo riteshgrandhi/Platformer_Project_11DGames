@@ -49,6 +49,7 @@
      <Compile Include="Assets\Cube_roll_Test\scripts\Hero_controller.cs" />
      <Compile Include="Assets\Cube_roll_Test\scripts\Rotate.cs" />
      <Compile Include="Assets\Cube_roll_Test\scripts\lightning.cs" />
+     <Compile Include="Assets\Cube_roll_Test\scripts\tile_tex_change.cs" />
      <Compile Include="Assets\dump\character.cs" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
