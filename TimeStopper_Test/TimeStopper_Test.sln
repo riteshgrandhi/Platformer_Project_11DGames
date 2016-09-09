@@ -1,11 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{C2D108BD-938F-6625-7AF4-6AA81B467975}") = "TimeStopper_Test", "Assembly-CSharp-firstpass.csproj", "{B0EFA5B9-F30E-2277-7F9B-D55D8A67091E}"
-EndProject
 Project("{C2D108BD-938F-6625-7AF4-6AA81B467975}") = "TimeStopper_Test", "Assembly-CSharp.csproj", "{F49C0691-8290-65AF-8AE2-2A9FE6277204}"
-EndProject
-Project("{C2D108BD-938F-6625-7AF4-6AA81B467975}") = "TimeStopper_Test", "Assembly-CSharp-Editor.csproj", "{4BAF05DC-3891-5877-DA88-4EF2EDF42298}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0EFA5B9-F30E-2277-7F9B-D55D8A67091E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0EFA5B9-F30E-2277-7F9B-D55D8A67091E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0EFA5B9-F30E-2277-7F9B-D55D8A67091E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0EFA5B9-F30E-2277-7F9B-D55D8A67091E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F49C0691-8290-65AF-8AE2-2A9FE6277204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F49C0691-8290-65AF-8AE2-2A9FE6277204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F49C0691-8290-65AF-8AE2-2A9FE6277204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F49C0691-8290-65AF-8AE2-2A9FE6277204}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BAF05DC-3891-5877-DA88-4EF2EDF42298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BAF05DC-3891-5877-DA88-4EF2EDF42298}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BAF05DC-3891-5877-DA88-4EF2EDF42298}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BAF05DC-3891-5877-DA88-4EF2EDF42298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
